@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Grade Converter</h1>
+        <form id="gradeForm">
+            <div id="students">
+                <div class="student">
+                    <label for="name1">Student Name:</label>
+                    <input type="text" id="name1" name="name1" required>
+                    <div class="subjects">
+                        <div class="subject">
+                            <label for="subject1_1">Subject Name:</label>
+                            <input type="text" id="subject1_1" name="subject1_1" required>
+                            <label for="score1_1">Enter Score:</label>
+                            <input type="number" id="score1_1" name="score1_1" min="0" max="100" required>
+                        </div>
+                    </div>
+                    <button type="button" class="addSubject">Add Subject</button>
+                </div>
+            </div>
+            <button type="button" id="addStudent">Add Student</button>
+            <button type="submit">Convert to Grade</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
